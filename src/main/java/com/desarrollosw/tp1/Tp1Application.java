@@ -38,7 +38,7 @@ public class Tp1Application {
 					.stockMinimo(5)
 					.tiempoEstimadoCocina(30)
 					.unidadMedida("unidad")
-					.tipo("Pizzas")
+					.tipo("Manufacturado")
 					.receta("Tomate, queso muzzarella")
 					.build();
 
@@ -59,7 +59,7 @@ public class Tp1Application {
 
 			Pedido pedido= Pedido.builder()
 					.total(1500)
-					.estado("Terminado")
+					.estado("Entregado")
 					.fecha(new Date())
 					.tipoEnvio("Delivery")
 					.detallesPedido(new ArrayList<>())
@@ -71,7 +71,7 @@ public class Tp1Application {
 					.descuento(0)
 					.fecha(new Date())
 					.numero(25565)
-					.tipoPago("Contado")
+					.tipoPago("Efectivo")
 					.build();
 
 			pedido.setFactura(factura);
