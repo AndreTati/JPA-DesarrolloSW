@@ -8,9 +8,9 @@ El Trabajo Práctico de JPA fue desarrollado de la siguiente manera
 3. Siguiendo las relaciones y navegabilidad del diagrama de clases incluimos las anotaciones @OneToOne, @OneToMany e indicamos donde debían estar las FK de las entidades relacionadas
 4. Agregamos los repositorios correspondientes a las entidades creadas. Estas clases deben ser interfaces e implementar JPA Repository para poder utilizar los métodos de JPA a la hora de persistir los datos.
 5. En el main implementamos la lógica de guardado en la base de datos de la siguiente manera:
-    a) Comenzamos con Rubro y Producto, debido a la relación se puede persistir ambos en la misma transacción
-    b) Luego persistimos un cliente con sus domicilios y pedidos incluidos. Dentro del pedido se encuentra el detalle del              pedido y la factura correspondiente.
-6. Para poder utilizar los repositorios en la clase donde se implementa el método main declaramos un objeto de tipo Repository que utilizamos anotado con @Autowired. Esta técnica conocida como inyección de dependencia posibilita utilizar repositorios sin necesidad de establecer relaciones con ellos.
+   * Comenzamos con Rubro y Producto, debido a la relación se puede persistir ambos en la misma transacción
+   * Luego persistimos un cliente con sus domicilios y pedidos incluidos. Dentro del pedido se encuentra el detalle del pedido y la factura correspondiente.
+7. Para poder utilizar los repositorios en la clase donde se implementa el método main declaramos un objeto de tipo Repository que utilizamos anotado con @Autowired. Esta técnica conocida como inyección de dependencia posibilita utilizar repositorios sin necesidad de establecer relaciones con ellos.
 
 # Concluciones
 Utilizar Spring Boot, JPA y Lombok en el desarrollo de aplicaciones es una experiencia enriquecedora que conlleva varios aprendizajes:
